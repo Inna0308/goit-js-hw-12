@@ -109,7 +109,7 @@ const onBtnLoadMoreClick = async event => {
     }
   } catch (error) {
     iziToast.error({
-      message: 'Try again.',
+      message: 'The end of search results.',
       position: 'topRight',
     });
   } finally {
