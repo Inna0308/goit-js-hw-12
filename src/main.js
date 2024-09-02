@@ -67,7 +67,6 @@ const onSearchFormSubmit = async event => {
     searchFormEl.reset();
   } catch (error) {
     iziToast.error({
-      message: 'Try again.',
       position: 'topRight',
     });
   } finally {
@@ -109,7 +108,6 @@ const onBtnLoadMoreClick = async event => {
     }
   } catch (error) {
     iziToast.error({
-      message: 'The end of search results.',
       position: 'topRight',
     });
   } finally {
