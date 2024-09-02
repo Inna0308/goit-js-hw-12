@@ -1,0 +1,200 @@
+@import 'simplelightbox/dist/simple-lightbox.min.css';
+
+@import 'izitoast/dist/css/iziToast.min.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #000000;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.search-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+  padding-left: 16px;
+  margin-right: 8px;
+}
+
+.search-input:hover {
+  border: 1px solid #000;
+}
+
+.search-input:focus {
+  border: 1px solid #4e75ff;
+  outline: none;
+  color: #2e2f42;
+}
+
+.search-btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border: none;
+}
+
+.search-btn:hover {
+  background: #6c8cff;
+}
+
+.search-form {
+  margin-bottom: 32px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  border: 1px solid #808080;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
+.wrapper {
+  background-color: white;
+  height: 48px;
+}
+
+.img-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 4px 20px;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.number {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.load-more {
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 125px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-top: 32px;
+  margin-bottom: 100px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.load-more:hover {
+  background: #6c8cff;
+}
+
+.container {
+  position: relative; /* Додайте позиціонування для правильного позиціонування лоудера */
+}
+
+.js-loader {
+  position: absolute;
+  bottom: -70px;
+  left: 49%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #4e75ff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.is-hidden {
+  display: none;
+}
