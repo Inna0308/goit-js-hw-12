@@ -67,6 +67,8 @@ const onSearchFormSubmit = async event => {
     searchFormEl.reset();
   } catch (error) {
     iziToast.error({
+      message:
+        'Oops! Something went wrong. Please refresh the page or try again later.',
       position: 'topRight',
     });
   } finally {
@@ -108,6 +110,8 @@ const onBtnLoadMoreClick = async event => {
     }
   } catch (error) {
     iziToast.error({
+      message:
+        'Oops! Something went wrong. Please refresh the page or try again later.',
       position: 'topRight',
     });
   } finally {
